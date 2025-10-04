@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Thunder Rapids Rafting Co. for questions, bookings, or more information.">
+  <meta name="description" content="Contact Thunder Rapids Rafting Co. for questions, reservations, or feedback.">
   <meta name="author" content="Ricardo Apolonio">
-  <title>Thunder Rapids Rafting Co. | Contact</title>
+  <title>Thunder Rapids Rafting Co. | Contact Us</title>
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
+
 <body>
   <header>
     <img src="images/logo.png" alt="Thunder Rapids Logo">
@@ -21,13 +22,80 @@
 
   <main>
     <h1>Contact Us</h1>
-    <p>Have questions or ready to book your next adventure? Reach out to our team today!</p>
-    <p>Email: info@thunderrapids.com</p>
-    <p>Phone: +1 (800) 555-RAFT</p>
+
+    <!-- Company Information -->
+    <section class="company-info">
+      <h2>Company Information</h2>
+      <p><strong>Address:</strong> 123 River Road, Clearwater, ID 83552</p>
+      <p><strong>Phone:</strong> +1 (800) 555-RAFT (7238)</p>
+      <p><strong>Email:</strong> info@thunderrapids.com</p>
+    </section>
+
+    <!-- Embedded Google Map -->
+    <section class="map">
+      <h2>Find Us</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.9349189506594!2d-111.8005670245442!3d40.366520271448075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87529b95a1a35bdf%3A0xe1e827c7674eecb7!2sProvo%2C%20UT!5e0!3m2!1sen!2sus!4v1700000000000" 
+        width="100%" 
+        height="300" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </section>
+
+    <!-- Employee Profiles -->
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="John Doe - Lead Guide">
+        <figcaption>John Doe — Lead Rafting Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="Sarah Lee - Customer Service">
+        <figcaption>Sarah Lee — Customer Service Specialist</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="Carlos Rivera - Safety Coordinator">
+        <figcaption>Carlos Rivera — Safety Coordinator</figcaption>
+      </figure>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <p><strong>Purpose of Message:</strong></p>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label>
+          <input type="checkbox" name="subscribe">
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Thunder Rapids Rafting Co. | Ricardo Apolonio</p>
+    <nav class="socialmedia">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+    </nav>
   </footer>
 </body>
 </html>
