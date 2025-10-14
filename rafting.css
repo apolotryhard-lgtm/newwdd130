@@ -1,0 +1,46 @@
+/* Contact page styles */
+.company-info, .map, .employees, .contact-form {
+  margin: 16px;
+  padding: 8px;
+}
+
+.employees figure {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin: 8px;
+}
+
+.employees img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 400px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
